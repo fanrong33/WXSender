@@ -22,11 +22,11 @@ wxsender.send_message(touser='oyAU3v3oDtr00EPuFUUxylEYHezg', msgtype='text', tex
 ## Install Manual
 
 * cookie
-
+使用 `Chrome` 登录微信公众平台，并且扫描安全二维码，成功登录后台后，打开 `开发者工具`，Application，查看Cookies，复制粘贴
 * token
-
+登录后台后，可以在浏览器地址栏中找到 `token`
 * user_fakeid
-
+打开用户设置页面，查看源码，搜索 `fakeid`
 
 ### Thanks
 感谢以下的项目
