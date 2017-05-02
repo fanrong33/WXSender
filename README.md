@@ -19,10 +19,12 @@ wxsender = WXSender()
 wxsender.send_message(touser='oyAU3v3oDtr00EPuFUUxylEYHezg', msgtype='text', text={'content':'Hello Wechat'})
 ```
 
-## Install
+## Install Manual
 
 * cookie
+
 * token
+
 * user_fakeid
 
 
