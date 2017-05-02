@@ -1,33 +1,31 @@
 # WXSender
+WXSender 是用 Python 实现的微信公众平台微信发送接口，可以模拟在网页上登录微信公众平台，给指定好友发送微信。
+WXSender 目前只支持纯文本消息的发送，可以作为一个消息发送的接口，信息的数量每日不受限制。
 
-## 为什么会有这个项目
+## Overview
 
-微信公众号发送消息接口
-因为需要认证，发送消息-客服接口	
-公众号接口权限说明 https://mp.weixin.qq.com/wiki
-公众号接口
-
+因为一个项目的需求，想要使用微信公众号来作为交互的界面，以被动模式来通知自己，所以需要使用微信公众号的发送消息-客服接口 [公众号接口权限说明](https://mp.weixin.qq.com/wiki)。但是悲催的是微信公众号需要进行认证（每年300软妹币），才有接口权限。所以只能自己模拟登录网页版后台了😞
 
 
-WXSender 是用 Python 实现的微信公众平台微信发送接口，可以模拟在网页上登录微信公众平台，给指定或者所有好友发送微信。
-
-WXSender 目前只支持纯文本消息的发送，可以作为一个消息群发器的接口，信息的数量每日不受限制。
-
-# 用法
+## Usage
 
 测试用例已经合成到 WXSender 类中，只需要如下代码即可测试：
 
-'''python
-wxs = WXSender()
-wxs.run_test("abc@abc.com","abc")
-'''
+```python
+from wxsender import WXSender
 
-# cookie
-# token
-# user_fakeid
+wxsender = WXSender()
+wxsender.send_message(touser='oyAU3v3oDtr00EPuFUUxylEYHezg', msgtype='text', text={'content':'Hello Wechat'})
+```
+
+## Install
+
+* cookie
+* token
+* user_fakeid
 
 
-## 感激
+### Thanks
 感谢以下的项目
 
 * [WXSender-Python](https://github.com/daoluan/WXSender-Python/) 
