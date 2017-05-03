@@ -19,6 +19,8 @@ wxsender = WXSender()
 wxsender.send_message(touser='oyAU3v3oDtr00EPuFUUxylEYHezg', msgtype='text', text={'content':'Hello Wechat'})
 ```
 
+不好意思，执行以上代码是会报错的，因为还需要以下操作手动配置相关的设置
+
 ## Install Manual
 
 * cookie
@@ -27,7 +29,7 @@ wxsender.send_message(touser='oyAU3v3oDtr00EPuFUUxylEYHezg', msgtype='text', tex
 
 * token
 
-登录后台后，可以在浏览器地址栏中找到 `token`
+登录后台后，可以在浏览器地址栏中找到 `token`。如果重新登录，`token` 会变化需要重新设置
 
 * user_fakeid
 
